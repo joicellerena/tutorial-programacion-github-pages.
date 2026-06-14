@@ -19,7 +19,7 @@ Mostrar los números del 1 al 10.
 for(int i=1; i<=10; i++){
     System.out.println(i);
 }
-
+Código fuente: ciclos/Ciclos.java
 ## 2. Métodos (Funciones)
 
 Los métodos permiten reutilizar código.
@@ -39,7 +39,7 @@ Crear un método que multiplique dos números.
 public static int multiplicar(int a, int b){
     return a*b;
 }
-
+Código fuente: metodos/Metodos.java
 ## 3. Vectores y Matrices
 
 Los vectores almacenan varios datos del mismo tipo.
@@ -57,7 +57,7 @@ Mostrar todos los elementos del vector.
 for(int i=0; i<numeros.length; i++){
     System.out.println(numeros[i]);
 }
-
+Código fuente: vectores_matrices/VectoresMatrices.java
 ## 4. Listas
 
 Las listas permiten almacenar elementos dinámicamente.
@@ -75,7 +75,7 @@ Agregar tres nombres a una lista.
 nombres.add("Ana");
 nombres.add("Luis");
 nombres.add("Carlos");
-
+Código fuente: listas/Listas.java
 ## 5. Manejo de Archivos
 
 Permite guardar y leer información desde archivos.
@@ -87,9 +87,8 @@ FileWriter archivo = new FileWriter("datos.txt");
 ### Ejercicio
 
 Crear un archivo y escribir tu nombre.
-
 ### Solución
-
 FileWriter archivo = new FileWriter("nombre.txt");
 archivo.write("Joice");
 archivo.close();
+Código fuente: archivos/ManejoArchivos.java
