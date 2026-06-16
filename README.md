@@ -1,3 +1,4 @@
+```html
 <div style="background: linear-gradient(135deg, #0F2027, #203A43, #2C5364); padding:35px; border-radius:20px; color:white; box-shadow:0 8px 20px rgba(0,0,0,0.3);">
 
 <h1 style="text-align:center; color:#4FC3F7; font-size:40px;">
@@ -15,7 +16,7 @@ A lo largo de este recorrido encontrarás explicaciones claras, ejemplos paso a 
 <h2 style="color:#81D4FA;">📚 Temas que aprenderás</h2>
 
 <ul style="font-size:18px; line-height:1.8;">
-    <li><b>🔄 Ciclos (Bucles):</b> Aprende a repetir instrucciones utilizando estructuras como <code>for</code>, <code>while</code> y <code>do-while</code>.</li>
+    <li><b>🔄 Ciclos (Bucles):</b> Aprende a repetir instrucciones utilizando estructuras como for, while y do-while.</li>
 
     <li><b>⚙️ Métodos (Funciones):</b> Descubre cómo crear bloques de código reutilizables para organizar mejor tus programas.</li>
 
@@ -48,6 +49,20 @@ Java es uno de los lenguajes de programación más utilizados en el mundo, emple
 Desarrolla tus habilidades, resuelve desafíos y conviértete en un mejor programador paso a paso.
 </p>
 
+<hr style="margin-top:30px; border:1px solid #4FC3F7;">
+
+<p style="text-align:center; font-size:16px; color:#B3E5FC;">
+💻 Tutorial desarrollado como material educativo para el aprendizaje de Programación en Java.
+</p>
+
+<div style="text-align:center; margin-top:20px;">
+    <a href="#ciclos" style="background:#4FC3F7; color:#0F2027; padding:12px 20px; border-radius:10px; text-decoration:none; font-weight:bold;">
+        🚀 Comenzar Tutorial
+    </a>
 </div>
+
+</div>
+```
+
 
 
