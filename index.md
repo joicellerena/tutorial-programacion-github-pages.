@@ -28,7 +28,7 @@ El objetivo de este material es proporcionar una guía de estudio clara y didác
 
 <hr>
 
-<h1>🔄 1. Ciclos (Bucles)</h1>
+<h1>1. Ciclos (Bucles)</h1>
 
 <h2>¿Qué es un ciclo?</h2>
 
