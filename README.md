@@ -1,26 +1,53 @@
-<h1 style="color:#1E88E5;">📘 Tutorial de Programación en Java</h1>
+<div style="background: linear-gradient(135deg, #0F2027, #203A43, #2C5364); padding:35px; border-radius:20px; color:white; box-shadow:0 8px 20px rgba(0,0,0,0.3);">
 
-<p style="color:#424242; font-size:18px;">
-Bienvenido a este tutorial educativo diseñado para estudiantes y principiantes que desean aprender los fundamentos de la programación en Java de una manera práctica y sencilla.
+<h1 style="text-align:center; color:#4FC3F7; font-size:40px;">
+🚀 Tutorial de Programación en Java
+</h1>
+
+<p style="font-size:18px; text-align:justify;">
+¡Bienvenido a este tutorial educativo diseñado para estudiantes, principiantes y entusiastas de la programación! Aquí aprenderás los fundamentos de Java de forma práctica, dinámica y fácil de comprender.
 </p>
 
-<p style="color:#424242; font-size:18px;">
-Aquí encontrarás explicaciones claras, ejemplos paso a paso, ejercicios propuestos y soluciones detalladas sobre los temas más importantes de la programación:
+<p style="font-size:18px; text-align:justify;">
+A lo largo de este recorrido encontrarás explicaciones claras, ejemplos paso a paso, ejercicios propuestos y soluciones detalladas que te ayudarán a desarrollar habilidades de programación y pensamiento lógico.
 </p>
 
-<ul style="font-size:18px;">
-  <li style="color:#E53935;"><b>🔄 Ciclos (Bucles)</b>: Repetición de instrucciones mediante estructuras <code>for</code>, <code>while</code> y <code>do-while</code>.</li>
-  <li style="color:#8E24AA;"><b>⚙️ Métodos (Funciones)</b>: Creación y reutilización de bloques de código para resolver problemas de forma eficiente.</li>
-  <li style="color:#43A047;"><b>📊 Vectores</b>: Almacenamiento y manipulación de conjuntos de datos en una dimensión.</li>
-  <li style="color:#FB8C00;"><b>🧮 Matrices</b>: Organización de datos en filas y columnas para resolver problemas más complejos.</li>
-  <li style="color:#00ACC1;"><b>📋 Listas</b>: Uso de colecciones dinámicas para almacenar información de manera flexible.</li>
-  <li style="color:#6D4C41;"><b>📁 Manejo de Archivos</b>: Lectura, escritura y procesamiento de datos almacenados en archivos.</li>
+<h2 style="color:#81D4FA;">📚 Temas que aprenderás</h2>
+
+<ul style="font-size:18px; line-height:1.8;">
+    <li><b>🔄 Ciclos (Bucles):</b> Aprende a repetir instrucciones utilizando estructuras como <code>for</code>, <code>while</code> y <code>do-while</code>.</li>
+
+    <li><b>⚙️ Métodos (Funciones):</b> Descubre cómo crear bloques de código reutilizables para organizar mejor tus programas.</li>
+
+    <li><b>📊 Vectores:</b> Conoce cómo almacenar y manipular conjuntos de datos en una sola dimensión.</li>
+
+    <li><b>🧮 Matrices:</b> Trabaja con datos organizados en filas y columnas para desarrollar soluciones más avanzadas.</li>
+
+    <li><b>📋 Listas:</b> Aprende a utilizar colecciones dinámicas para almacenar información de manera flexible.</li>
+
+    <li><b>📁 Manejo de Archivos:</b> Explora técnicas para leer, escribir y procesar información almacenada en archivos.</li>
 </ul>
 
-<p style="color:#424242; font-size:18px;">
-🎯 <b>Objetivo:</b> Proporcionar una guía de estudio completa que permita desarrollar habilidades de programación mediante la práctica constante y la resolución de ejercicios reales.
+<h2 style="color:#81D4FA;">🎯 Objetivo</h2>
+
+<p style="font-size:18px; text-align:justify;">
+Brindar una guía de estudio completa que permita fortalecer los conocimientos de programación mediante la práctica constante, el análisis de ejemplos y la resolución de ejercicios reales.
 </p>
 
-<p style="color:#1565C0; font-size:20px;">
-🚀 ¡Comienza tu aprendizaje y fortalece tus conocimientos en Java paso a paso!
+<h2 style="color:#81D4FA;">💡 ¿Por qué aprender Java?</h2>
+
+<p style="font-size:18px; text-align:justify;">
+Java es uno de los lenguajes de programación más utilizados en el mundo, empleado en aplicaciones empresariales, desarrollo web, aplicaciones móviles y múltiples áreas de la tecnología.
 </p>
+
+<p style="text-align:center; font-size:24px; color:#4FC3F7;">
+🌟 <b>¡Comienza hoy mismo tu aventura en el mundo de la programación!</b> 🌟
+</p>
+
+<p style="text-align:center; font-size:18px;">
+Desarrolla tus habilidades, resuelve desafíos y conviértete en un mejor programador paso a paso.
+</p>
+
+</div>
+
+
