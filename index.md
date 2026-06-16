@@ -1,51 +1,93 @@
-<div style="background: linear-gradient(135deg, #0F2027, #203A43, #2C5364); padding:40px; border-radius:20px; color:white; box-shadow:0 8px 20px rgba(0,0,0,0.3);">
+<div style="background:linear-gradient(135deg,#1e3c72,#2a5298);padding:40px;border-radius:20px;color:white;">
 
-<h1 style="text-align:center; color:#4FC3F7;"> Tutorial de Programación en Java</h1>
+<h1 style="text-align:center;font-size:50px;">
+🔄 Ciclos (Bucles) en Java
+</h1>
 
-<p style="font-size:18px; text-align:justify;">
-Bienvenido a este tutorial educativo diseñado para estudiantes y principiantes que desean aprender programación desde cero. Aquí encontrarás explicaciones detalladas, ejemplos prácticos, ejercicios propuestos y soluciones paso a paso.
+<p style="font-size:20px;text-align:justify;">
+Los ciclos son una de las herramientas más importantes de la programación. Permiten repetir instrucciones varias veces sin necesidad de escribir el mismo código repetidamente.
 </p>
 
-<p style="font-size:18px; text-align:justify;">
-El objetivo de este material es proporcionar una guía de estudio clara y didáctica para comprender los conceptos fundamentales de la programación utilizando el lenguaje Java.
-</p>
-
-<h2 style="color:#81D4FA;"> Temas que aprenderás</h2>
-
-<ul style="font-size:18px;">
-<li> Ciclos (Bucles)</li>
-<li> Métodos (Funciones)</li>
-<li> Vectores y Matrices</li>
-<li> Listas</li>
-<li> Manejo de Archivos</li>
-</ul>
-
-<p style="text-align:center; font-size:22px;">
- <b>¡Comienza tu aprendizaje y desarrolla tus habilidades como programador!</b>
+<p style="font-size:20px;text-align:justify;">
+Imagina que deseas mostrar los números del 1 al 100. Sería muy tedioso escribir 100 instrucciones diferentes. Gracias a los ciclos, podemos hacerlo con pocas líneas de código.
 </p>
 
 </div>
 
 <hr>
 
-<h1>1. Ciclos (Bucles)</h1>
-
-<h2>¿Qué es un ciclo?</h2>
+<h2>🤔 ¿Qué es un ciclo?</h2>
 
 <p>
-Un ciclo es una estructura de control que permite repetir un conjunto de instrucciones varias veces sin necesidad de escribir el mismo código repetidamente.
+Un ciclo es una estructura de control que repite un bloque de instrucciones mientras se cumpla una condición determinada.
 </p>
 
-<h2>¿Para qué sirve?</h2>
+<p>
+Los ciclos ayudan a:
+</p>
 
 <ul>
-<li>Repetir tareas automáticamente.</li>
-<li>Mostrar listas de datos.</li>
-<li>Realizar cálculos repetitivos.</li>
-<li>Recorrer vectores y matrices.</li>
+<li>Automatizar tareas repetitivas.</li>
+<li>Reducir la cantidad de código.</li>
+<li>Mejorar la organización de los programas.</li>
+<li>Resolver problemas de forma más eficiente.</li>
 </ul>
 
-<h2>Ejemplo</h2>
+<hr>
+
+<h2>🌍 Ejemplo de la vida real</h2>
+
+<p>
+Imagina que un profesor necesita pasar lista a 30 estudiantes.
+</p>
+
+<p>
+Sin ciclos tendría que escribir la misma instrucción 30 veces.
+</p>
+
+<p>
+Con un ciclo, la computadora repite automáticamente la acción hasta completar la lista.
+</p>
+
+<hr>
+
+<h2>📚 Tipos de ciclos en Java</h2>
+
+<ul>
+<li>for</li>
+<li>while</li>
+<li>do-while</li>
+</ul>
+
+<hr>
+
+<h1>1️⃣ Ciclo For</h1>
+
+<p>
+El ciclo <b>for</b> se utiliza cuando conocemos de antemano cuántas veces queremos repetir una acción.
+</p>
+
+<h3>Sintaxis</h3>
+
+<pre>
+<code>
+for(inicializacion; condicion; incremento){
+    instrucciones;
+}
+</code>
+</pre>
+
+<h3>Partes del ciclo</h3>
+
+<ul>
+<li><b>Inicialización:</b> crea la variable de control.</li>
+<li><b>Condición:</b> determina cuándo termina el ciclo.</li>
+<li><b>Incremento:</b> modifica la variable en cada repetición.</li>
+</ul>
+
+<hr>
+
+<h3>Ejemplo</h3>
 
 <pre>
 <code>
@@ -55,16 +97,17 @@ for(int i = 1; i <= 5; i++){
 </code>
 </pre>
 
-<h2>Explicación</h2>
+<h3>Explicación paso a paso</h3>
 
 <ul>
-<li><b>int i = 1</b>: Inicializa la variable.</li>
-<li><b>i <= 5</b>: Condición del ciclo.</li>
-<li><b>i++</b>: Incrementa la variable.</li>
-<li><b>System.out.println(i)</b>: Muestra el valor.</li>
+<li>La variable i comienza en 1.</li>
+<li>Se verifica si i es menor o igual a 5.</li>
+<li>Se muestra el valor.</li>
+<li>Se incrementa en 1.</li>
+<li>El proceso se repite.</li>
 </ul>
 
-<h2>Salida</h2>
+<h3>Resultado</h3>
 
 <pre>
 1
@@ -74,215 +117,133 @@ for(int i = 1; i <= 5; i++){
 5
 </pre>
 
-<h2>Ejercicio</h2>
+<hr>
 
-<p>Mostrar los números del 1 al 10.</p>
+<h1>2️⃣ Ciclo While</h1>
 
-<h2>Solución</h2>
+<p>
+El ciclo while se utiliza cuando no sabemos exactamente cuántas repeticiones se realizarán.
+</p>
+
+<h3>Sintaxis</h3>
 
 <pre>
 <code>
-for(int i = 1; i <= 10; i++){
-    System.out.println(i);
+while(condicion){
+    instrucciones;
 }
 </code>
 </pre>
 
+<h3>Ejemplo</h3>
+
+<pre>
+<code>
+int i = 1;
+
+while(i <= 5){
+    System.out.println(i);
+    i++;
+}
+</code>
+</pre>
+
+<h3>Resultado</h3>
+
+<pre>
+1
+2
+3
+4
+5
+</pre>
+
+<hr>
+
+<h1>3️⃣ Ciclo Do While</h1>
+
 <p>
-<a href="TU_ENLACE_GITHUB"> Ver Ciclos.java</a>
+La diferencia es que este ciclo ejecuta el bloque al menos una vez antes de comprobar la condición.
+</p>
+
+<h3>Sintaxis</h3>
+
+<pre>
+<code>
+do{
+   instrucciones;
+}
+while(condicion);
+</code>
+</pre>
+
+<h3>Ejemplo</h3>
+
+<pre>
+<code>
+int i = 1;
+
+do{
+    System.out.println(i);
+    i++;
+}
+while(i <= 5);
+</code>
+</pre>
+
+<hr>
+
+<h2>🎯 Ejercicio Propuesto</h2>
+
+<p>
+Crear un programa que muestre los números del 1 al 10 utilizando un ciclo for.
+</p>
+
+<h2>✅ Solución</h2>
+
+<pre>
+<code>
+public class Ciclos {
+
+    public static void main(String[] args) {
+
+        for(int i = 1; i <= 10; i++){
+
+            System.out.println(i);
+
+        }
+
+    }
+}
+</code>
+</pre>
+
+<hr>
+
+<h2>💻 Código Fuente</h2>
+
+<p>
+<a href="ciclos/Ciclos.java" target="_blank">
+📄 Ver archivo Ciclos.java
+</a>
 </p>
 
 <hr>
 
-<h1> 2. Métodos (Funciones)</h1>
-
-<h2>¿Qué es un método?</h2>
+<h2>📝 Resumen</h2>
 
 <p>
-Un método es un bloque de código reutilizable que realiza una tarea específica.
+Los ciclos permiten repetir instrucciones automáticamente y son fundamentales en cualquier lenguaje de programación.
 </p>
-
-<h2>Ejemplo</h2>
-
-<pre>
-<code>
-public static int suma(int a, int b){
-    return a + b;
-}
-</code>
-</pre>
-
-<h2>Explicación</h2>
 
 <ul>
-<li>Recibe dos números.</li>
-<li>Los suma.</li>
-<li>Devuelve el resultado.</li>
+<li>For → cuando conocemos el número de repeticiones.</li>
+<li>While → cuando depende de una condición.</li>
+<li>Do While → ejecuta al menos una vez.</li>
 </ul>
 
-<h2>Ejercicio</h2>
-
-<p>Crear un método que multiplique dos números.</p>
-
-<h2>Solución</h2>
-
-<pre>
-<code>
-public static int multiplicar(int a, int b){
-    return a * b;
-}
-</code>
-</pre>
-
 <p>
-<a href="TU_ENLACE_GITHUB"> Ver Metodos.java</a>
+Dominar los ciclos es esencial para resolver problemas de programación de manera eficiente.
 </p>
 
-<hr>
-
-<h1> 3. Vectores y Matrices</h1>
-
-<h2>¿Qué es un vector?</h2>
-
-<p>
-Un vector almacena varios datos del mismo tipo en una sola variable.
-</p>
-
-<pre>
-<code>
-int[] numeros = {1,2,3,4,5};
-</code>
-</pre>
-
-<h2>¿Qué es una matriz?</h2>
-
-<p>
-Una matriz organiza información en filas y columnas.
-</p>
-
-<pre>
-<code>
-int[][] matriz = {
-    {1,2},
-    {3,4}
-};
-</code>
-</pre>
-
-<h2>Ejercicio</h2>
-
-<p>Crear un vector con cinco nombres.</p>
-
-<h2>Solución</h2>
-
-<pre>
-<code>
-String[] nombres = {
-    "Ana",
-    "Luis",
-    "Carlos",
-    "Pedro",
-    "Maria"
-};
-</code>
-</pre>
-
-<p>
-<a href="TU_ENLACE_GITHUB"> Ver VectoresMatrices.java</a>
-</p>
-
-<hr>
-
-<h1> 4. Listas</h1>
-
-<h2>¿Qué es una lista?</h2>
-
-<p>
-Una lista es una colección dinámica que puede aumentar o disminuir de tamaño.
-</p>
-
-<pre>
-<code>
-ArrayList<String> nombres = new ArrayList<>();
-
-nombres.add("Ana");
-nombres.add("Luis");
-nombres.add("Carlos");
-</code>
-</pre>
-
-<h2>Ejercicio</h2>
-
-<p>Crear una lista con cinco ciudades.</p>
-
-<h2>Solución</h2>
-
-<pre>
-<code>
-ArrayList<String> ciudades = new ArrayList<>();
-
-ciudades.add("Ambato");
-ciudades.add("Quito");
-ciudades.add("Cuenca");
-ciudades.add("Loja");
-ciudades.add("Guayaquil");
-</code>
-</pre>
-
-<p>
-<a href="TU_ENLACE_GITHUB">Ver Listas.java</a>
-</p>
-
-<hr>
-
-<h1> 5. Manejo de Archivos</h1>
-
-<h2>¿Qué es el manejo de archivos?</h2>
-
-<p>
-Permite guardar y recuperar información desde archivos de texto.
-</p>
-
-<pre>
-<code>
-FileWriter archivo = new FileWriter("datos.txt");
-
-archivo.write("Hola Mundo");
-
-archivo.close();
-</code>
-</pre>
-
-<h2>Ejercicio</h2>
-
-<p>Crear un archivo llamado estudiantes.txt y guardar tres nombres.</p>
-
-<h2>Solución</h2>
-
-<pre>
-<code>
-FileWriter archivo = new FileWriter("estudiantes.txt");
-
-archivo.write("Juan\n");
-archivo.write("Maria\n");
-archivo.write("Pedro\n");
-
-archivo.close();
-</code>
-</pre>
-
-<p>
-<a href="TU_ENLACE_GITHUB"> Ver ManejoArchivos.java</a>
-</p>
-
-<hr>
-
-<h1>Conclusión</h1>
-
-<p>
-Los ciclos, métodos, vectores, matrices, listas y manejo de archivos son herramientas fundamentales para desarrollar programas eficientes y organizados.
-</p>
-
-<p>
-La programación se aprende practicando. Experimenta con los ejemplos, resuelve nuevos ejercicios y continúa aprendiendo para fortalecer tus conocimientos.
-</p>
+<a href="index.html">🏠 Volver al Inicio</a>
