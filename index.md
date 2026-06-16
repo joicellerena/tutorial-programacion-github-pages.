@@ -1,249 +1,206 @@
-<div style="background:linear-gradient(135deg,#1e3c72,#2a5298);padding:40px;border-radius:20px;color:white;">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyecto Java - Tutorial</title>
 
-<h1 style="text-align:center;font-size:50px;">
-🔄 Ciclos (Bucles) en Java
-</h1>
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(135deg,#141e30,#243b55);
+    color:white;
+}
 
-<p style="font-size:20px;text-align:justify;">
-Los ciclos son una de las herramientas más importantes de la programación. Permiten repetir instrucciones varias veces sin necesidad de escribir el mismo código repetidamente.
-</p>
+/* HEADER */
+header{
+    text-align:center;
+    padding:25px;
+}
 
-<p style="font-size:20px;text-align:justify;">
-Imagina que deseas mostrar los números del 1 al 100. Sería muy tedioso escribir 100 instrucciones diferentes. Gracias a los ciclos, podemos hacerlo con pocas líneas de código.
-</p>
+header h1{
+    margin:0;
+}
 
+/* BOTONES */
+.menu{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    padding:10px;
+}
+
+.menu button{
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    color:white;
+    transition:0.3s;
+}
+
+.menu button:hover{
+    transform:scale(1.05);
+}
+
+.c1{background:#ff6b6b;}
+.c2{background:#6c5ce7;}
+.c3{background:#00b894;}
+.c4{background:#fdcb6e;}
+.c5{background:#0984e3;}
+
+/* SECCIONES */
+.seccion{
+    display:none;
+    background:white;
+    color:black;
+    width:85%;
+    margin:15px auto;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+h2{
+    color:#222;
+}
+
+code{
+    display:block;
+    background:#eee;
+    padding:10px;
+    border-radius:8px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>💻 Proyecto: Tutorial de Java</h1>
+<p>Página educativa interactiva</p>
+</header>
+
+<div class="menu">
+<button class="c1" onclick="mostrar('inicio')">Inicio</button>
+<button class="c2" onclick="mostrar('ciclos')">Ciclos</button>
+<button class="c3" onclick="mostrar('metodos')">Métodos</button>
+<button class="c4" onclick="mostrar('estructuras')">Vectores y Listas</button>
+<button class="c5" onclick="mostrar('conclusion')">Conclusión</button>
 </div>
 
-<hr>
-
-<h2>🤔 ¿Qué es un ciclo?</h2>
-
+<!-- INICIO -->
+<div id="inicio" class="seccion" style="display:block;">
+<h2>📌 Introducción</h2>
 <p>
-Un ciclo es una estructura de control que repite un bloque de instrucciones mientras se cumpla una condición determinada.
+Este proyecto es un tutorial interactivo sobre programación en Java.
+Su objetivo es aprender los conceptos básicos de forma sencilla y práctica.
 </p>
 
+<h3>💡 ¿Qué pensamos?</h3>
 <p>
-Los ciclos ayudan a:
+Pensamos que Java es un lenguaje importante porque ayuda a crear programas, aplicaciones y sistemas.
 </p>
+</div>
 
-<ul>
-<li>Automatizar tareas repetitivas.</li>
-<li>Reducir la cantidad de código.</li>
-<li>Mejorar la organización de los programas.</li>
-<li>Resolver problemas de forma más eficiente.</li>
-</ul>
+<!-- CICLOS -->
+<div id="ciclos" class="seccion">
+<h2>🔄 Ciclos</h2>
 
-<hr>
+<p><b>¿Para qué sirve?</b></p>
+<p>Sirve para repetir instrucciones varias veces sin escribir mucho código.</p>
 
-<h2>🌍 Ejemplo de la vida real</h2>
+<p><b>¿Cómo funciona?</b></p>
+<p>Ejecuta un bloque de código mientras se cumpla una condición.</p>
 
-<p>
-Imagina que un profesor necesita pasar lista a 30 estudiantes.
-</p>
-
-<p>
-Sin ciclos tendría que escribir la misma instrucción 30 veces.
-</p>
-
-<p>
-Con un ciclo, la computadora repite automáticamente la acción hasta completar la lista.
-</p>
-
-<hr>
-
-<h2>📚 Tipos de ciclos en Java</h2>
-
-<ul>
-<li>for</li>
-<li>while</li>
-<li>do-while</li>
-</ul>
-
-<hr>
-
-<h1>1️⃣ Ciclo For</h1>
-
-<p>
-El ciclo <b>for</b> se utiliza cuando conocemos de antemano cuántas veces queremos repetir una acción.
-</p>
-
-<h3>Sintaxis</h3>
-
-<pre>
+<h3>Ejemplo:</h3>
 <code>
-for(inicializacion; condicion; incremento){
-    instrucciones;
-}
-</code>
-</pre>
-
-<h3>Partes del ciclo</h3>
-
-<ul>
-<li><b>Inicialización:</b> crea la variable de control.</li>
-<li><b>Condición:</b> determina cuándo termina el ciclo.</li>
-<li><b>Incremento:</b> modifica la variable en cada repetición.</li>
-</ul>
-
-<hr>
-
-<h3>Ejemplo</h3>
-
-<pre>
-<code>
-for(int i = 1; i <= 5; i++){
+for(int i=1;i<=5;i++){
     System.out.println(i);
 }
 </code>
-</pre>
 
-<h3>Explicación paso a paso</h3>
+<h3>📝 Ejercicio:</h3>
+<p>Imprime los números del 1 al 10.</p>
+</div>
 
-<ul>
-<li>La variable i comienza en 1.</li>
-<li>Se verifica si i es menor o igual a 5.</li>
-<li>Se muestra el valor.</li>
-<li>Se incrementa en 1.</li>
-<li>El proceso se repite.</li>
-</ul>
+<!-- METODOS -->
+<div id="metodos" class="seccion">
+<h2>⚙️ Métodos</h2>
 
-<h3>Resultado</h3>
+<p><b>¿Para qué sirve?</b></p>
+<p>Para organizar el código y reutilizarlo.</p>
 
-<pre>
-1
-2
-3
-4
-5
-</pre>
+<p><b>¿Cómo funciona?</b></p>
+<p>Es un bloque que se puede llamar cuando se necesite.</p>
 
-<hr>
-
-<h1>2️⃣ Ciclo While</h1>
-
-<p>
-El ciclo while se utiliza cuando no sabemos exactamente cuántas repeticiones se realizarán.
-</p>
-
-<h3>Sintaxis</h3>
-
-<pre>
+<h3>Ejemplo:</h3>
 <code>
-while(condicion){
-    instrucciones;
+public static void saludar(){
+    System.out.println("Hola");
 }
 </code>
-</pre>
 
-<h3>Ejemplo</h3>
+<h3>📝 Ejercicio:</h3>
+<p>Crea un método que imprima tu nombre.</p>
+</div>
 
-<pre>
+<!-- VECTORES Y LISTAS -->
+<div id="estructuras" class="seccion">
+<h2>📊 Vectores y 📋 Listas</h2>
+
+<p><b>Vectores:</b> almacenan datos fijos.</p>
 <code>
-int i = 1;
-
-while(i <= 5){
-    System.out.println(i);
-    i++;
-}
+int[] v = {1,2,3};
 </code>
-</pre>
 
-<h3>Resultado</h3>
-
-<pre>
-1
-2
-3
-4
-5
-</pre>
-
-<hr>
-
-<h1>3️⃣ Ciclo Do While</h1>
-
-<p>
-La diferencia es que este ciclo ejecuta el bloque al menos una vez antes de comprobar la condición.
-</p>
-
-<h3>Sintaxis</h3>
-
-<pre>
+<p><b>Listas:</b> almacenan datos dinámicos.</p>
 <code>
-do{
-   instrucciones;
-}
-while(condicion);
+ArrayList<String> lista = new ArrayList<>();
+lista.add("Hola");
 </code>
-</pre>
 
-<h3>Ejemplo</h3>
+<h3>📝 Ejercicio:</h3>
+<p>Crea una lista con 3 nombres.</p>
+</div>
 
-<pre>
-<code>
-int i = 1;
+<!-- CONCLUSION -->
+<div id="conclusion" class="seccion">
+<h2>🏁 Conclusión</h2>
 
-do{
-    System.out.println(i);
-    i++;
+<p>
+Java es un lenguaje muy útil para aprender programación porque permite crear programas organizados y potentes.
+</p>
+
+<p>
+Este tutorial nos ayudó a entender mejor los ciclos, métodos y estructuras de datos.
+</p>
+
+<h3>✨ Reflexión final</h3>
+<p>
+La programación siempre tiene solución si practicas y sigues aprendiendo.
+</p>
+</div>
+
+<footer>
+<p>Joice Llerena - Proyecto Java</p>
+</footer>
+
+<script>
+function mostrar(id){
+    document.querySelectorAll('.seccion').forEach(s=>s.style.display='none');
+    document.getElementById(id).style.display='block';
 }
-while(i <= 5);
-</code>
-</pre>
+</script>
 
-<hr>
-
-<h2>🎯 Ejercicio Propuesto</h2>
-
-<p>
-Crear un programa que muestre los números del 1 al 10 utilizando un ciclo for.
-</p>
-
-<h2>✅ Solución</h2>
-
-<pre>
-<code>
-public class Ciclos {
-
-    public static void main(String[] args) {
-
-        for(int i = 1; i <= 10; i++){
-
-            System.out.println(i);
-
-        }
-
-    }
-}
-</code>
-</pre>
-
-<hr>
-
-<h2>💻 Código Fuente</h2>
-
-<p>
-<a href="ciclos/Ciclos.java" target="_blank">
-📄 Ver archivo Ciclos.java
-</a>
-</p>
-
-<hr>
-
-<h2>📝 Resumen</h2>
-
-<p>
-Los ciclos permiten repetir instrucciones automáticamente y son fundamentales en cualquier lenguaje de programación.
-</p>
-
-<ul>
-<li>For → cuando conocemos el número de repeticiones.</li>
-<li>While → cuando depende de una condición.</li>
-<li>Do While → ejecuta al menos una vez.</li>
-</ul>
-
-<p>
-Dominar los ciclos es esencial para resolver problemas de programación de manera eficiente.
-</p>
-
-<a href="index.html">🏠 Volver al Inicio</a>
+</body>
+</html>
