@@ -1,101 +1,182 @@
-# Tutorial de Programación
+<div style="background: linear-gradient(135deg, #0F2027, #203A43, #2C5364); padding:40px; border-radius:20px; color:white; box-shadow:0 8px 20px rgba(0,0,0,0.3);">
 
-## Introducción
+<h1 style="text-align:center; color:#4FC3F7;"> Tutorial de Programación en Java</h1>
 
-Bienvenido a este tutorial de programación. Aquí aprenderás conceptos fundamentales utilizados en el desarrollo de software.
+<p style="font-size:18px; text-align:justify;">
+Bienvenido a este tutorial educativo diseñado para estudiantes y principiantes que desean aprender programación desde cero. Aquí encontrarás explicaciones detalladas, ejemplos prácticos, ejercicios propuestos y soluciones paso a paso.
+</p>
 
----
+<p style="font-size:18px; text-align:justify;">
+El objetivo de este material es proporcionar una guía de estudio clara y didáctica para comprender los conceptos fundamentales de la programación utilizando el lenguaje Java.
+</p>
 
-# 1. Ciclos (Bucles)
+<h2 style="color:#81D4FA;"> Temas que aprenderás</h2>
 
-Los ciclos permiten repetir instrucciones varias veces.
+<ul style="font-size:18px;">
+<li> Ciclos (Bucles)</li>
+<li> Métodos (Funciones)</li>
+<li> Vectores y Matrices</li>
+<li> Listas</li>
+<li> Manejo de Archivos</li>
+</ul>
 
-## Ejemplo
+<p style="text-align:center; font-size:22px;">
+ <b>¡Comienza tu aprendizaje y desarrolla tus habilidades como programador!</b>
+</p>
 
-```java
+</div>
+
+<hr>
+
+<h1>🔄 1. Ciclos (Bucles)</h1>
+
+<h2>¿Qué es un ciclo?</h2>
+
+<p>
+Un ciclo es una estructura de control que permite repetir un conjunto de instrucciones varias veces sin necesidad de escribir el mismo código repetidamente.
+</p>
+
+<h2>¿Para qué sirve?</h2>
+
+<ul>
+<li>Repetir tareas automáticamente.</li>
+<li>Mostrar listas de datos.</li>
+<li>Realizar cálculos repetitivos.</li>
+<li>Recorrer vectores y matrices.</li>
+</ul>
+
+<h2>Ejemplo</h2>
+
+<pre>
+<code>
 for(int i = 1; i <= 5; i++){
     System.out.println(i);
 }
-```
+</code>
+</pre>
 
-## Ejercicio
+<h2>Explicación</h2>
 
-Mostrar los números del 1 al 10.
+<ul>
+<li><b>int i = 1</b>: Inicializa la variable.</li>
+<li><b>i <= 5</b>: Condición del ciclo.</li>
+<li><b>i++</b>: Incrementa la variable.</li>
+<li><b>System.out.println(i)</b>: Muestra el valor.</li>
+</ul>
 
-## Solución
+<h2>Salida</h2>
 
-```java
+<pre>
+1
+2
+3
+4
+5
+</pre>
+
+<h2>Ejercicio</h2>
+
+<p>Mostrar los números del 1 al 10.</p>
+
+<h2>Solución</h2>
+
+<pre>
+<code>
 for(int i = 1; i <= 10; i++){
     System.out.println(i);
 }
-```
+</code>
+</pre>
 
-### Código fuente
+<p>
+<a href="TU_ENLACE_GITHUB"> Ver Ciclos.java</a>
+</p>
 
-[Ver Ciclos.java](https://github.com/joicellerena/tutorial-programacion-github-pages./blob/main/ciclos/Ciclos.java)
+<hr>
 
----
+<h1> 2. Métodos (Funciones)</h1>
 
-# 2. Métodos (Funciones)
+<h2>¿Qué es un método?</h2>
 
-Los métodos permiten reutilizar código.
+<p>
+Un método es un bloque de código reutilizable que realiza una tarea específica.
+</p>
 
-## Ejemplo
+<h2>Ejemplo</h2>
 
-```java
+<pre>
+<code>
 public static int suma(int a, int b){
     return a + b;
 }
-```
+</code>
+</pre>
 
-## Ejercicio
+<h2>Explicación</h2>
 
-Crear un método que multiplique dos números.
+<ul>
+<li>Recibe dos números.</li>
+<li>Los suma.</li>
+<li>Devuelve el resultado.</li>
+</ul>
 
-## Solución
+<h2>Ejercicio</h2>
 
-```java
+<p>Crear un método que multiplique dos números.</p>
+
+<h2>Solución</h2>
+
+<pre>
+<code>
 public static int multiplicar(int a, int b){
     return a * b;
 }
-```
+</code>
+</pre>
 
-### Código fuente
+<p>
+<a href="TU_ENLACE_GITHUB"> Ver Metodos.java</a>
+</p>
 
-[Ver Metodos.java](https://github.com/joicellerena/tutorial-programacion-github-pages./blob/main/metodos/Metodos.java)
+<hr>
 
----
+<h1> 3. Vectores y Matrices</h1>
 
-# 3. Vectores y Matrices
+<h2>¿Qué es un vector?</h2>
 
-Los vectores almacenan varios datos del mismo tipo.
+<p>
+Un vector almacena varios datos del mismo tipo en una sola variable.
+</p>
 
-## Ejemplo
-
-```java
+<pre>
+<code>
 int[] numeros = {1,2,3,4,5};
+</code>
+</pre>
 
-for(int i = 0; i < numeros.length; i++){
-    System.out.println(numeros[i]);
-}
-```
+<h2>¿Qué es una matriz?</h2>
 
-## Ejemplo de Matriz
+<p>
+Una matriz organiza información en filas y columnas.
+</p>
 
-```java
+<pre>
+<code>
 int[][] matriz = {
     {1,2},
     {3,4}
 };
-```
+</code>
+</pre>
 
-## Ejercicio
+<h2>Ejercicio</h2>
 
-Crear un vector con cinco nombres.
+<p>Crear un vector con cinco nombres.</p>
 
-## Solución
+<h2>Solución</h2>
 
-```java
+<pre>
+<code>
 String[] nombres = {
     "Ana",
     "Luis",
@@ -103,39 +184,41 @@ String[] nombres = {
     "Pedro",
     "Maria"
 };
+</code>
+</pre>
 
-for(String nombre : nombres){
-    System.out.println(nombre);
-}
-```
+<p>
+<a href="TU_ENLACE_GITHUB"> Ver VectoresMatrices.java</a>
+</p>
 
-### Código fuente
+<hr>
 
-[Ver VectoresMatrices.java](https://github.com/joicellerena/tutorial-programacion-github-pages./blob/main/vectores_matrices/VectoresMatrices.java)
+<h1> 4. Listas</h1>
 
----
+<h2>¿Qué es una lista?</h2>
 
-# 4. Listas
+<p>
+Una lista es una colección dinámica que puede aumentar o disminuir de tamaño.
+</p>
 
-Las listas permiten almacenar elementos dinámicamente.
-
-## Ejemplo
-
-```java
+<pre>
+<code>
 ArrayList<String> nombres = new ArrayList<>();
 
 nombres.add("Ana");
 nombres.add("Luis");
 nombres.add("Carlos");
-```
+</code>
+</pre>
 
-## Ejercicio
+<h2>Ejercicio</h2>
 
-Crear una lista con cinco ciudades.
+<p>Crear una lista con cinco ciudades.</p>
 
-## Solución
+<h2>Solución</h2>
 
-```java
+<pre>
+<code>
 ArrayList<String> ciudades = new ArrayList<>();
 
 ciudades.add("Ambato");
@@ -143,35 +226,41 @@ ciudades.add("Quito");
 ciudades.add("Cuenca");
 ciudades.add("Loja");
 ciudades.add("Guayaquil");
-```
+</code>
+</pre>
 
-### Código fuente
+<p>
+<a href="TU_ENLACE_GITHUB">Ver Listas.java</a>
+</p>
 
-[Ver Listas.java](https://github.com/joicellerena/tutorial-programacion-github-pages./blob/main/listas/Listas.java)
+<hr>
 
----
+<h1> 5. Manejo de Archivos</h1>
 
-# 5. Manejo de Archivos
+<h2>¿Qué es el manejo de archivos?</h2>
 
-Permite guardar y leer información desde archivos.
+<p>
+Permite guardar y recuperar información desde archivos de texto.
+</p>
 
-## Ejemplo
-
-```java
+<pre>
+<code>
 FileWriter archivo = new FileWriter("datos.txt");
 
 archivo.write("Hola Mundo");
 
 archivo.close();
-```
+</code>
+</pre>
 
-## Ejercicio
+<h2>Ejercicio</h2>
 
-Crear un archivo llamado estudiantes.txt y guardar tres nombres.
+<p>Crear un archivo llamado estudiantes.txt y guardar tres nombres.</p>
 
-## Solución
+<h2>Solución</h2>
 
-```java
+<pre>
+<code>
 FileWriter archivo = new FileWriter("estudiantes.txt");
 
 archivo.write("Juan\n");
@@ -179,16 +268,21 @@ archivo.write("Maria\n");
 archivo.write("Pedro\n");
 
 archivo.close();
-```
+</code>
+</pre>
 
-### Código fuente
+<p>
+<a href="TU_ENLACE_GITHUB"> Ver ManejoArchivos.java</a>
+</p>
 
-[Ver ManejoArchivos.java](https://github.com/joicellerena/tutorial-programacion-github-pages./blob/main/archivos/ManejoArchivos.java)
+<hr>
 
----
+<h1>Conclusión</h1>
 
-# Conclusión
-
+<p>
 Los ciclos, métodos, vectores, matrices, listas y manejo de archivos son herramientas fundamentales para desarrollar programas eficientes y organizados.
+</p>
 
-La práctica constante permite fortalecer los conocimientos adquiridos.
+<p>
+La programación se aprende practicando. Experimenta con los ejemplos, resuelve nuevos ejercicios y continúa aprendiendo para fortalecer tus conocimientos.
+</p>
